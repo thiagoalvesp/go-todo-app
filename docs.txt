@@ -1,0 +1,14 @@
+fazer o banco de dados   - DONE
+Docker Compose Postgre + go  -  DONE
+Consumo Thunder Bird - 
+implementar Segurança (jwt)
+implementar swagger 
+implementar teste unitário
+Usar ORM e ver a diferença
+
+Documentação
+Deploy na AWS
+
+APM
+Teste de Carga
+Teste Integrado

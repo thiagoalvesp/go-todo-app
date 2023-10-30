@@ -49,7 +49,7 @@ func Load() error {
 		Port:     viper.GetString("database.port"),
 		User:     viper.GetString("database.user"),
 		Pass:     viper.GetString("database.pass"),
-		Database: viper.GetString("database.database"),
+		Database: viper.GetString("database.name"),
 	}
 
 	return nil

@@ -6,12 +6,15 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/thiagoalvesp/go-todo-app/models"
 )
 
 func Get(w http.ResponseWriter, r *http.Request) {
-	id, err := strconv.Atoi(chi.URLParam(r, "id"))
+
+	Sid := chi.URLParam(r, "id")
+	id, err := strconv.Atoi(Sid)
+
 	if err != nil {
 		log.Printf("Erro ao fazer o parse do id: %v", err)
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
